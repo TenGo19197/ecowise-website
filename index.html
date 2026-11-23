@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Account Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-image:url('images/bank-bg.jpg');">
+
+<main>
+
+    <h1>Bank Account Application</h1>
+    <p>Please complete the form below to open your bank account.</p>
+
+    <form method="post">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <p class="field">
+                <label for="fullname">Full Name</label>
+                <input class="box" type="text" id="fullname"
+                name="fullname" placeholder="Enter your full name">
+            </p>
+
+            <p class="field">
+                <label for="dob">Date of Birth</label>
+                <input class="box" type="date" id="dob" name="dob">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+
+            <p class="field">
+                <label for="email">Email Address</label>
+                <input class="box" type="email" id="email"
+                name="email" placeholder="example@email.com">
+            </p>
+
+            <p class="field">
+                <label for="phone">Phone Number</label>
+                <input class="box" type="tel" id="phone"
+                name="phone" placeholder="Enter your phone number">
+            </p>
+
+            <p class="field">
+                <label for="address">Home Address</label>
+                <textarea class="box" id="address"
+                name="address" rows="4"></textarea>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Preferences</legend>
+
+            <p>Account Type</p>
+
+            <input type="radio" id="current"
+            name="account_type" value="current">
+            <label for="current">Current Account</label>
+
+            <input type="radio" id="savings"
+            name="account_type" value="savings">
+            <label for="savings">Savings Account</label>
+
+            <p class="field">
+                <label for="contact">Preferred Contact Method</label>
+                <select class="box" id="contact" name="contact">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+            </p>
+
+        </fieldset>
+
+        <p>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to the Terms and Conditions</label>
+        </p>
+
+        <button type="submit">Submit Application</button>
+
+        <p class="note">
+            Student project only. Do not enter real personal information.
+        </p>
+
+    </form>
+
+</main>
+
+</body>
+</html>
